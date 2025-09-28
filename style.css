@@ -41,7 +41,17 @@ body {
   gap: 1rem;
 }
 .identity { display: flex; align-items: center; gap: 1rem; }
-.avatar { width: 64px; height: 64px; border-radius: 50%; border: 1px solid var(--border); background: var(--card); }
+
+.avatar {
+  width: clamp(96px, 12vw, 160px);
+  height: clamp(96px, 12vw, 160px);
+  border-radius: 10%;
+  border: 1px solid var(--border);
+  object-fit: cover;
+  object-position: center;
+  background: var(--card);
+}
+
 .links a { color: var(--accent); text-decoration: none; }
 .links a:hover { text-decoration: underline; }
 

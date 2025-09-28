@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Your Name — PhD Student at Georgia Tech</title>
+  <title>Sherif Abdelrazek — PhD Student at Georgia Tech</title>
   <meta name="description" content="Personal academic website for a PhD student at Georgia Tech: publications, research, teaching, and contact." />
-  <meta property="og:title" content="Your Name — PhD Student at Georgia Tech" />
+  <meta property="og:title" content="Sherif Abdelrazek — PhD Student at Georgia Tech" />
   <meta property="og:description" content="Personal academic website for a PhD student at Georgia Tech." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="assets/social-card.png" />
@@ -24,10 +24,10 @@
   {
     "@context": "https://schema.org",
     "@type": "Person",
-    "name": "Your Name",
+    "name": "Sherif Abdelrazek",
     "affiliation": { "@type": "CollegeOrUniversity", "name": "Georgia Institute of Technology" },
     "jobTitle": "PhD Student",
-    "sameAs": ["https://scholar.google.com/", "https://orcid.org/", "https://github.com/"]
+    "sameAs": ["https://scholar.google.com/citations?user=JkhjF0QAAAAJ&hl=en", "https://orcid.org/0000-0003-1405-3966", "https://github.com/"]
   }
   </script>
 </head>
@@ -35,11 +35,13 @@
   <header class="site-header">
     <div class="container header-inner">
       <div class="identity">
-        <img class="avatar" src="assets/avatar-placeholder.svg" alt="Profile photo" />
+        <img class="avatar" src="assets/Sherif_Mostafa.JPG" loading="eager" decoding="async" alt="Your Name profile photo" />
         <div>
-          <h1>Your Name</h1>
+          <h1>Sherif Abdelrazek</h1>
           <p>PhD Student, Computer Science @ Georgia Tech</p>
           <p class="links">
+            <a href="#highlights">News</a> ·
+            <a href="#awards">Awards</a> ·
             <a href="#publications">Publications</a> ·
             <a href="#research">Research</a> ·
             <a href="#teaching">Teaching</a> ·
@@ -55,23 +57,37 @@
   <main class="container">
     <section id="about">
       <h2>About</h2>
-      <p>Short bio (3–5 sentences). Mention your research area, advisor, and lab/group. Example:
-      I am a PhD student in the School of Computer Science at Georgia Tech advised by Dr. [Advisor].
-      My research spans <em>systems</em> and <em>resource management</em>, with recent work on <em>slack aggregation</em> for datacenter efficiency.</p>
+      <p>I am a PhD student in the School of Computer Science at Georgia Tech advised by Dr. Ahmed Saeed.
+      My research spans <em>large-scale systems</em> and <em>datacenter resource management</em>, with current work focusing on managing <em>slack resources</em> for datacenter efficiency. My goal is to increase datacenter resource harvesting opportunities and improve energy efficiency while keeping SLOs intact.        
+    </p>
       <p>
-        <a class="button" href="assets/CV.pdf" target="_blank" rel="noopener">Download CV (PDF)</a>
-        <a class="button secondary" href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar</a>
-        <a class="button secondary" href="https://orcid.org/" target="_blank" rel="noopener">ORCID</a>
+        <a class="button" href="assets/CV.pdf" target="_blank" rel="noopener">CV</a>
+        <a class="button secondary" href="https://scholar.google.com/citations?user=JkhjF0QAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+        <a class="button secondary" href="https://orcid.org/0000-0003-1405-3966" target="_blank" rel="noopener">ORCID</a>
+        <a class="button secondary" href="https://www.linkedin.com/in/sherif-mohamed-65708718b/" target="_blank" rel="noopener">LinkedIn</a>
       </p>
     </section>
 
     <section id="highlights">
-      <h2>Highlights</h2>
+      <h2>News</h2>
       <ul class="highlights">
-        <li><strong>New:</strong> Paper accepted at <em>Conference X 2025</em> on XYZ.</li>
-        <li>Teaching assistant for <em>CS 6xxx</em> (Spring 2025).</li>
-        <li>Award: Best Paper Runner-up at <em>ACM SIGSPATIAL</em>.</li>
+        <li>My AlexU and AUC mentees Abdullah Tamman, Abdelrahman Abdelmotlb, Tony Yohana, and Yahia Ibrahim got two papers accepted at ACM SIGSPATIAL 2025!</li>
+        <li>My vision paper "Human-as-a-Sensor: Harnessing Brain Signals for Intelligent Multimodal Sensing in Spatially-Aware Systems" has been accepted at <em>ACM SIGSPATIAL 2025</em>.</li>
+        <li>Joined Georgia Tech as a CS PhD student and a GRA (Fall 2025).</li>
       </ul>
+    </section>
+    
+    <section id="awards">
+      <h2>Awards and Grants</h2>
+      <div id="pubFilters" class="filters">
+      <ul class="highlights">
+        <li><em>2024:</em> Honorary mention in the 2024 IEEE ComSoc competition for ranking among the top 16 projects worldwide.</li>
+        <li><em>2024:</em> ACM TSAS invitation for Best Papers Special Issue.</li>
+        <li><em>2024:</em> Complimentary one-year ACM professional membership.</li>
+        <li><em>2023:</em> ACM SIGSPATIAL 2023 Best Paper Runner-Up award.</li>
+        <li><em>2023:</em> ACM SIGSPATIAL 2023 travel grant.</li>
+        <li><em>2021:</em> Professor Naim Aboutaleb award from Alexandria University for ranking first.</li>
+      </ul>    
     </section>
 
     <section id="publications">
@@ -82,12 +98,12 @@
             <option value="all">All years</option>
           </select>
         </label>
-        <label>
+        <!-- <label>
           <input id="showPreprints" type="checkbox" checked /> Show preprints
-        </label>
+        </label> -->
       </div>
       <ol id="pubList" class="pub-list"></ol>
-      <p class="note">Tip: keep a <code>publications.json</code> file (included here) and this page will auto‑render your list.</p>
+      <!-- <p class="note">Tip: keep a <code>publications.json</code> file (included here) and this page will auto‑render your list.</p> -->
     </section>
 
     <section id="research">
@@ -114,15 +130,15 @@
 
     <section id="contact">
       <h2>Contact</h2>
-      <p><strong>Email:</strong> you [at] gatech [dot] edu<br/>
-         <strong>Office:</strong> Building / Room<br/>
-         <strong>Social:</strong> <a href="https://github.com/">GitHub</a> · <a href="https://www.linkedin.com/">LinkedIn</a> · <a href="https://scholar.google.com/">Scholar</a></p>
+      <p><strong>Email:</strong> sabdelrazek3 [at] gatech [dot] edu<br/>
+         <strong>Office:</strong> KACB / Room [TBD]<br/>
+         <strong>Social:</strong> <a href="https://www.linkedin.com/in/sherif-mohamed-65708718b/">LinkedIn</a> · <a href="https://scholar.google.com/citations?user=JkhjF0QAAAAJ&hl=en">Scholar</a></p>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>© <span id="year"></span> Your Name · Built with plain HTML/CSS · Hosted on GitHub Pages</p>
+      <p>© <span id="year"></span> Sherif Abdelrazek · Hosted on GitHub Pages</p>
     </div>
   </footer>
 </body>

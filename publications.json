@@ -1,36 +1,172 @@
 [
   {
-    "title": "Slack Aggregation for Efficient Datacenter Resource Management",
+    "title": "Human\u2011as\u2011a\u2011Sensor: Harnessing Brain Signals for Intelligent Multimodal Sensing in Spatially\u2011Aware Systems",
     "authors": [
-      "Your Name",
-      "Advisor Name"
+      "Sherif Mostafa",
+      "Khaled A. Harras",
+      "Moustafa Youssef"
     ],
-    "venue": "arXiv",
+    "venue": "ACM SIGSPATIAL",
     "year": 2025,
-    "doi": "",
-    "pdf": "#",
-    "code": "#",
-    "poster": "",
-    "video": "",
-    "badges": [
-      "Preprint"
-    ]
-  },
-  {
-    "title": "Human\u2011as\u2011a\u2011Sensor: A Vision for BCI\u2011Powered Sensing Systems",
-    "authors": [
-      "Your Name",
-      "Coauthor Name"
-    ],
-    "venue": "IEEE Access",
-    "year": 2024,
-    "doi": "10.0000/example.doi",
-    "pdf": "#",
+    "doi": "https://doi.org/10.1145/3748636.3760460",
+    "pdf": "",
     "code": "",
     "poster": "",
     "video": "",
     "badges": [
-      "Journal"
+      "Vision Paper",
+      "Just Accepted"
+    ]
+  },
+  {
+    "title": "A Survey of Indoor Localization Systems in Multi\u2011Floor Environments",
+    "authors": [
+      "Sherif Mostafa",
+      "Khaled A. Harras",
+      "Moustafa Youssef"
+    ],
+    "venue": "IEEE Access",
+    "year": 2025,
+    "doi": "https://doi.org/10.1109/ACCESS.2025.3599785",
+    "pdf": "",
+    "code": "",
+    "poster": "",
+    "video": "",
+    "badges": [
+      "Journal Paper"
+    ]
+  },
+  {
+    "title": "Ubiquitous and Low\u2011Overhead Floor Identification with Limited Cellular Information",
+    "authors": [
+      "Sherif Mostafa",
+      "Moustafa Youssef",
+      "Khaled A. Harras"
+    ],
+    "venue": "ACM TSAS",
+    "year": 2024,
+    "doi": "https://doi.org/10.1145/3708986",
+    "pdf": "",
+    "code": "",
+    "poster": "",
+    "video": "",
+    "badges": [
+      "Journal Paper",
+      "Invited for Special Issue"
+    ]
+  },
+  {
+    "title": "Accurate and Ubiquitous Floor Identification at the Edge using a Single Cell Tower",
+    "authors": [
+      "Sherif Mostafa",
+      "Moustafa Youssef",
+      "Khaled A. Harras"
+    ],
+    "venue": "IEEE/ACM SEC",
+    "year": 2024,
+    "doi": "https://doi.org/10.1109/SEC62691.2024.00024",
+    "pdf": "",
+    "code": "",
+    "poster": "",
+    "video": "",
+    "badges": [
+      "Conference Paper"
+    ]
+  },
+  {
+    "title": "ModeSense: Ubiquitous and Accurate Transportation Mode Detection using Serving Cell Tower Information",
+    "authors": [
+      "Sherif Mostafa",
+      "Moustafa Youssef",
+      "Khaled A. Harras"
+    ],
+    "venue": "ACM SIGSPATIAL",
+    "year": 2024,
+    "doi": "https://doi.org/10.1145/3678717.3691250",
+    "pdf": "",
+    "code": "",
+    "poster": "",
+    "video": "",
+    "badges": [
+      "Conference Paper"
+    ]
+  },
+  {
+    "title": "Vision: Leveraging Low Earth Orbit Satellites for Future Ubiquitous Positioning",
+    "authors": [
+      "Sherif Mostafa", 
+      "Mahmoud Elsanhoury", 
+      "Jaakko Yliaho", 
+      "Janne Koljonen", 
+      "Heidi Kuusniemi", 
+      "Mohammed Elmusrati", 
+      "Khaled A. Harras", 
+      "Moustafa Youssef"
+    ],
+    "venue": "ACM SIGSPATIAL",
+    "year": 2024,
+    "doi": "https://doi.org/10.1145/3678717.3691251",
+    "pdf": "",
+    "code": "",
+    "poster": "",
+    "video": "",
+    "badges": [
+      "Vision Paper"
+    ]
+  },
+  {
+    "title": "Robust and Ubiquitous Mobility Mode Estimation Using Limited Cellular Information",
+    "authors": [
+      "Sherif Mostafa",
+      "Khaled A. Harras", 
+      "Moustafa Youssef"
+    ],
+    "venue": "IEEE TVT",
+    "year": 2024,
+    "doi": "{https://doi.org/10.1109/TVT.2024.3454208",
+    "pdf": "",
+    "code": "",
+    "poster": "",
+    "video": "",
+    "badges": [
+      "Journal Paper"
+    ]
+  },
+  {
+    "title": "UniCellular: An Accurate and Ubiquitous Floor Identification System using Single Cell Tower Information",
+    "authors": [
+      "Sherif Mostafa",
+      "Khaled A. Harras", 
+      "Moustafa Youssef"
+    ],
+    "venue": "ACM SIGSPATIAL",
+    "year": 2023,
+    "doi": "https://doi.org/10.1145/3589132.3625635",
+    "pdf": "",
+    "code": "",
+    "poster": "",
+    "video": "",
+    "badges": [
+      "Conference Paper",
+      "Best Paper Runner-Up"
+    ]
+  },
+  {
+    "title": "Ubiquitous Transportation Mode Estimation using Limited Cell Tower Information",
+    "authors": [
+      "Sherif Mostafa",
+      "Khaled A. Harras", 
+      "Moustafa Youssef"
+    ],
+    "venue": "IEEE VTC-Spring",
+    "year": 2023,
+    "doi": "https://doi.org/10.1109/VTC2023-Spring57618.2023.10200431",
+    "pdf": "",
+    "code": "",
+    "poster": "",
+    "video": "",
+    "badges": [
+      "Conference Paper"
     ]
   }
 ]
