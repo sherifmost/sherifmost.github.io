@@ -1,16 +1,19 @@
 // scripts.js
 document.addEventListener('DOMContentLoaded', async () => {
-  document.getElementById('year').textContent = new Date().getFullYear();
+  // Footer year
+  const yearEl = document.getElementById('year');
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
 
+  // Theme toggle
   const toggle = document.getElementById('themeToggle');
   toggle?.addEventListener('click', () => {
     const isDark = document.documentElement.classList.toggle('dark');
     localStorage.setItem('theme', isDark ? 'dark' : 'light');
   });
 
+  // Load publications (with cache-bust)
   let pubs = null;
   try {
-    // cache-bust + no-store to avoid stale responses
     const res = await fetch('publications.json?v=' + Date.now(), { cache: 'no-store' });
     if (!res.ok) throw new Error(`HTTP ${res.status} ${res.statusText}`);
     pubs = await res.json();
@@ -26,33 +29,78 @@ document.addEventListener('DOMContentLoaded', async () => {
   if (Array.isArray(pubs)) {
     renderPublications(pubs);
   } else {
-    // Optional: show a friendly message on the page
     const list = document.getElementById('pubList');
-    list.innerHTML = '<li>Could not load publications. Check console for details.</li>';
+    if (list) list.innerHTML = '<li>Could not load publications. Check console for details.</li>';
   }
 });
 
+/* -------- Helpers for badges -------- */
+function escapeHTML(s) {
+  return String(s).replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+}
+
+function badgeHTML(badgeText) {
+  const text = String(badgeText).trim();
+  const lower = text.toLowerCase();
+
+  // 🏆 Best Paper (any "best … paper" phrasing)
+  if (/(^|\b)best\b.*\bpaper\b/.test(lower)) {
+    return `<span class="badge badge--best" title="${escapeHTML(text)}">🏆 ${escapeHTML(text)}</span>`
+    // Best&nbsp;Paper</span>`;
+  }
+
+  // 🥈 Runner-up / Honourable mention
+  if (/runner.?up/.test(lower)) {
+    return `<span class="badge badge--runnerup" title="${escapeHTML(text)}">🥈 Runner-up</span>`;
+  }
+  if (/honou?rable\s+mention/.test(lower)) {
+    return `<span class="badge badge--runnerup" title="${escapeHTML(text)}">🏅 Honorable&nbsp;Mention</span>`;
+  }
+
+  // 📉 Acceptance rate (e.g., "Acceptance: 18%" or "accept 12.5%")
+  const m = lower.match(/accept(?:ance)?[:\s]*([0-9]+(?:\.[0-9]+)?)\s*%/);
+  if (m) {
+    const rate = m[1];
+    return `<span class="badge badge--accept" data-rate="${escapeHTML(rate)}" title="${escapeHTML(text)}">📉 Acceptance</span>`;
+  }
+
+  // Default badge
+  return `<span class="badge" title="${escapeHTML(text)}">${escapeHTML(text)}</span>`;
+}
+
+/* -------- Renderer -------- */
 function renderPublications(pubs) {
   const list = document.getElementById('pubList');
-  const yearSel = document.getElementById('yearFilter');
-  // const showPreprints = document.getElementById('showPreprints');
+  if (!list) {
+    console.error('Missing #pubList in HTML.');
+    return;
+  }
 
-  const years = Array.from(new Set(pubs.map(p => p.year))).sort((a,b) => b - a);
-  years.forEach(y => {
-    const opt = document.createElement('option');
-    opt.value = String(y);
-    opt.textContent = String(y);
-    yearSel.appendChild(opt);
-  });
+  const yearSel = document.getElementById('yearFilter'); // may be null if you removed the filter
+
+  // Populate the year selector if present
+  if (yearSel) {
+    // prevent duplicate options if render is ever called twice
+    const existing = new Set([...yearSel.querySelectorAll('option')].map(o => o.value));
+    const years = Array.from(new Set(pubs.map(p => p.year))).sort((a, b) => b - a);
+    years.forEach(y => {
+      const val = String(y);
+      if (!existing.has(val)) {
+        const opt = document.createElement('option');
+        opt.value = val;
+        opt.textContent = val;
+        yearSel.appendChild(opt);
+      }
+    });
+  }
 
   const draw = () => {
-    const year = yearSel.value;
-    // const allowPreprints = showPreprints.checked;
+    const year = yearSel?.value ?? 'all';
+
     list.innerHTML = '';
     pubs
       .filter(p => year === 'all' ? true : String(p.year) === year)
-      // .filter(p => allowPreprints ? true : (p.venue || '').toLowerCase() !== 'arxiv')
-      .sort((a,b) => (b.year - a.year) || a.title.localeCompare(b.title))
+      .sort((a, b) => (b.year - a.year) || a.title.localeCompare(b.title))
       .forEach(p => {
         const li = document.createElement('li');
         const title = `<span class="pub-title">${p.title}</span>`;
@@ -65,13 +113,15 @@ function renderPublications(pubs) {
           p.poster ? `<a href="${p.poster}" target="_blank" rel="noopener">Poster</a>` : '',
           p.video ? `<a href="${p.video}" target="_blank" rel="noopener">Video</a>` : ''
         ].filter(Boolean).join(' · ');
-        const badges = (p.badges || []).map(b => `<span class="badge">${b}</span>`).join(' ');
+
+        const badges = (p.badges || []).map(badgeHTML).join(' ');
         li.innerHTML = `${title}${badges ? ' ' + badges : ''}<br>${authors}. ${venue}. ${links}`;
         list.appendChild(li);
       });
   };
 
-  yearSel.addEventListener('change', draw);
-  // showPreprints.addEventListener('change', draw);
+  // Attach listeners only if the control exists
+  yearSel?.addEventListener('change', draw);
+
   draw();
 }

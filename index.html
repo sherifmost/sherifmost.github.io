@@ -8,8 +8,8 @@
   <meta property="og:title" content="Sherif Abdelrazek — PhD Student at Georgia Tech" />
   <meta property="og:description" content="Personal academic website for a PhD student at Georgia Tech." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="assets/social-card.png" />
-  <link rel="icon" href="assets/favicon.png" />
+  <meta property="og:image" content="assets/Sherif_Mostafa.JPG" />
+  <link rel="icon" href="assets/Georgia Tech Logo.png" />
   <link rel="stylesheet" href="style.css" />
   <script defer src="scripts.js"></script>
   <script>
@@ -35,7 +35,7 @@
   <header class="site-header">
     <div class="container header-inner">
       <div class="identity">
-        <img class="avatar" src="assets/Sherif_Mostafa.JPG" loading="eager" decoding="async" alt="Your Name profile photo" />
+        <img class="avatar" src="assets/Sherif_Mostafa.JPG" loading="eager" decoding="async" alt="Sherif Abdelrazek" />
         <div>
           <h1>Sherif Abdelrazek</h1>
           <p>PhD Student, Computer Science @ Georgia Tech</p>
@@ -56,7 +56,7 @@
 
   <main class="container">
     <section id="about">
-      <h2>About</h2>
+      <!-- <h2>About</h2> -->
       <p>I am a PhD student in the School of Computer Science at Georgia Tech advised by Dr. Ahmed Saeed.
       My research spans <em>large-scale systems</em> and <em>datacenter resource management</em>, with current work focusing on managing <em>slack resources</em> for datacenter efficiency. My goal is to increase datacenter resource harvesting opportunities and improve energy efficiency while keeping SLOs intact.        
     </p>
@@ -68,8 +68,15 @@
       </p>
     </section>
 
+    <!-- Full-bleed wave between sections -->
+    <div class="wave-sep" aria-hidden="true">
+      <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+        <path d="M0,40 C240,120 480,0 720,60 C960,120 1200,20 1440,60 L1440,120 L0,120 Z"></path>
+      </svg>
+    </div>
+
     <section id="highlights">
-      <h2>News</h2>
+      <h2 class="section-title"><span class="icon">✨</span>News</h2>
       <ul class="highlights">
         <li>My AlexU and AUC mentees Abdullah Tamman, Abdelrahman Abdelmotlb, Tony Yohana, and Yahia Ibrahim got two papers accepted at ACM SIGSPATIAL 2025!</li>
         <li>My vision paper "Human-as-a-Sensor: Harnessing Brain Signals for Intelligent Multimodal Sensing in Spatially-Aware Systems" has been accepted at ACM SIGSPATIAL 2025.</li>
@@ -78,7 +85,7 @@
     </section>
     
     <section id="awards">
-      <h2>Awards and Grants</h2>
+      <h2 class="section-title"><span class="icon">✨</span>Awards and Grants</h2>
       <div id="pubFilters" class="filters">
       <ul class="highlights">
         <li><em>2024:</em> 
@@ -103,7 +110,7 @@
     </section>
 
     <section id="publications">
-      <h2>Publications</h2>
+      <h2 class="section-title"><span class="icon">✨</span>Publications</h2>
       <div id="pubFilters" class="filters">
         <label>Filter:
           <select id="yearFilter">
@@ -113,6 +120,8 @@
         <!-- <label>
           <input id="showPreprints" type="checkbox" checked /> Show preprints
         </label> -->
+
+      <!-- <span id="pubCount" class="filter-count" aria-live="polite">0 items</span> -->
       </div>
       <ol id="pubList" class="pub-list"></ol>
       <!-- <p class="note">Tip: keep a <code>publications.json</code> file (included here) and this page will auto‑render your list.</p> -->
@@ -124,7 +133,7 @@
     </section> -->
 
     <section id="teaching">
-      <h2>Teaching</h2>
+      <h2 class="section-title"><span class="icon">✨</span>Teaching</h2>
       <ul>
         <li>Teaching Assistant, American University in Cairo (AUC) — <em>Advanced Machine Learning (CSCE 4604)</em> [Spring 2022, 2023 & Fall 2022, 2023, 2024].</li>
         <li>Teaching Assistant, American University in Cairo (AUC) — <em>Computer Networks (CSCE 3312)</em> [Spring 2024].</li>
@@ -132,7 +141,7 @@
     </section>
 
     <section id="service">
-      <h2>Professional Service</h2>
+      <h2 class="section-title"><span class="icon">✨</span>Professional Service</h2>
       <ul>
         <li><em>Reviewer:</em> IEEE MDM 2025, IEEE MDM 2024, IEEE PerCom 2025, IEEE INFOCOM 2024, IEEE INFOCOM 2023, IEEE TMC, ACM TSAS, ACM MobiCom 2023.</li>
         <li><em>Member:</em> IEEE Graduate Student Member (2024-2026), IEEE ComSoc Graduate Student Member (2024-2026), ACM Professional Member (2024-2025), ACM SIGSPATIAL Member (2023-2024).</li>
