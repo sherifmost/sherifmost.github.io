@@ -113,9 +113,11 @@
       <h2 class="section-title"><span class="icon">✨</span>Publications</h2>
       <div id="pubFilters" class="filters">
         <label>Filter:
-          <select id="yearFilter">
-            <option value="all">All years</option>
-          </select>
+          <span class="select">
+            <select id="yearFilter">
+              <option value="all">All years</option>
+            </select>
+          </span>
         </label>
         <!-- <label>
           <input id="showPreprints" type="checkbox" checked /> Show preprints
@@ -149,6 +151,14 @@
       </ul>
     </section>
 
+    <!-- Full-bleed wave between sections -->
+    <div class="wave-sep" aria-hidden="true">
+      <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+        <path d="M0,40 C240,120 480,0 720,60 C960,120 1200,20 1440,60 L1440,120 L0,120 Z"></path>
+      </svg>
+    </div>
+
+    
     <section id="contact">
       <h2>Contact</h2>
       <p><strong>Email:</strong> sabdelrazek3 [at] gatech [dot] edu<br/>
