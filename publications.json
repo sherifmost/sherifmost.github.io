@@ -2,7 +2,7 @@
   {
     "title": "Human\u2011as\u2011a\u2011Sensor: Harnessing Brain Signals for Intelligent Multimodal Sensing in Spatially\u2011Aware Systems",
     "authors": [
-      "Sherif Mostafa",
+      "<strong>Sherif Mostafa</strong>",
       "Khaled A. Harras",
       "Moustafa Youssef"
     ],
@@ -21,7 +21,7 @@
   {
     "title": "A Survey of Indoor Localization Systems in Multi\u2011Floor Environments",
     "authors": [
-      "Sherif Mostafa",
+      "<strong>Sherif Mostafa</strong>",
       "Khaled A. Harras",
       "Moustafa Youssef"
     ],
@@ -39,7 +39,7 @@
   {
     "title": "Ubiquitous and Low\u2011Overhead Floor Identification with Limited Cellular Information",
     "authors": [
-      "Sherif Mostafa",
+      "<strong>Sherif Mostafa</strong>",
       "Moustafa Youssef",
       "Khaled A. Harras"
     ],
@@ -58,7 +58,7 @@
   {
     "title": "Accurate and Ubiquitous Floor Identification at the Edge using a Single Cell Tower",
     "authors": [
-      "Sherif Mostafa",
+      "<strong>Sherif Mostafa</strong>",
       "Moustafa Youssef",
       "Khaled A. Harras"
     ],
@@ -76,7 +76,7 @@
   {
     "title": "ModeSense: Ubiquitous and Accurate Transportation Mode Detection using Serving Cell Tower Information",
     "authors": [
-      "Sherif Mostafa",
+      "<strong>Sherif Mostafa</strong>",
       "Moustafa Youssef",
       "Khaled A. Harras"
     ],
@@ -95,7 +95,7 @@
   {
     "title": "Vision: Leveraging Low Earth Orbit Satellites for Future Ubiquitous Positioning",
     "authors": [
-      "Sherif Mostafa", 
+      "<strong>Sherif Mostafa</strong>", 
       "Mahmoud Elsanhoury", 
       "Jaakko Yliaho", 
       "Janne Koljonen", 
@@ -119,13 +119,13 @@
   {
     "title": "Robust and Ubiquitous Mobility Mode Estimation Using Limited Cellular Information",
     "authors": [
-      "Sherif Mostafa",
+      "<strong>Sherif Mostafa</strong>",
       "Khaled A. Harras", 
       "Moustafa Youssef"
     ],
     "venue": "IEEE TVT",
     "year": 2024,
-    "doi": "{https://doi.org/10.1109/TVT.2024.3454208",
+    "doi": "https://doi.org/10.1109/TVT.2024.3454208",
     "pdf": "",
     "code": "",
     "poster": "",
@@ -137,7 +137,7 @@
   {
     "title": "UniCellular: An Accurate and Ubiquitous Floor Identification System using Single Cell Tower Information",
     "authors": [
-      "Sherif Mostafa",
+      "<strong>Sherif Mostafa</strong>",
       "Khaled A. Harras", 
       "Moustafa Youssef"
     ],
@@ -157,7 +157,7 @@
   {
     "title": "Ubiquitous Transportation Mode Estimation using Limited Cell Tower Information",
     "authors": [
-      "Sherif Mostafa",
+      "<strong>Sherif Mostafa</strong>",
       "Khaled A. Harras", 
       "Moustafa Youssef"
     ],

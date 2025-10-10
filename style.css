@@ -23,6 +23,8 @@
   --acc-text: #145a32;
 
   --section-gap: 2rem;
+
+  color-scheme: light;
 }
 section {
   padding-block: var(--section-gap);
@@ -56,6 +58,8 @@ section, h1, h2, h3 {
   --acc-bg: #0f2a1a;
   --acc-border: #2ecc71;
   --acc-text: #9be7bd;
+
+  color-scheme: dark;
 }
 
 /* badge variants */
