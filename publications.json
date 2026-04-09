@@ -1,5 +1,43 @@
 [
   {
+    "title": "When Server-Level Load Imbalance Helps: Power Savings without Capacity Loss",
+    "authors": [
+      "<strong>Sherif Abdelrazek</strong>",
+      "Dhyey Thummar",
+      "Ahmed Saeed"
+    ],
+    "venue": "NSDI",
+    "year": 2026,
+    "doi": "",
+    "pdf": "",
+    "code": "",
+    "poster": "",
+    "video": "",
+    "badges": [
+      "Poster Paper",
+      "Just Accepted"
+    ]
+  },
+  {
+    "title": "Human\u2011as\u2011a\u2011Sensor: Toward Autonomous Multimodal Sensing for Self\u2011Determined Technology Engagement",
+    "authors": [
+      "<strong>Sherif Mostafa</strong>",
+      "Khaled A. Harras",
+      "Moustafa Youssef"
+    ],
+    "venue": "IEEE Pervasive Computing",
+    "year": 2026,
+    "doi": "https://doi.org/10.1109/MPRV.2026.3667609",
+    "pdf": "",
+    "code": "",
+    "poster": "",
+    "video": "",
+    "badges": [
+      "Magazine Paper",
+      "Just Accepted"
+    ]
+  },
+  {
     "title": "Human\u2011as\u2011a\u2011Sensor: Harnessing Brain Signals for Intelligent Multimodal Sensing in Spatially\u2011Aware Systems",
     "authors": [
       "<strong>Sherif Mostafa</strong>",
